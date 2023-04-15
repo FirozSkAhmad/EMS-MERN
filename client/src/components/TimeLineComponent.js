@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../context/AppContext';
+
 
 const TimeLineComponent = () => {
+    const { data, deductionsLength } = useContext(AppContext);
     return (
-        <div>
+        <>
+            {deductionsLength ? null : <div className='emptyCon'>
+                <p>No Punches Recorded</p>
+                <button>Edit</button>
+            </div>}
+        </>
 
-        </div>
     )
 }
 

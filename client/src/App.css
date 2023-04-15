@@ -6,7 +6,7 @@
   background: #ffffff;
 }
 
-.wrapper>p{
+.wrapper > p {
   margin: 0;
   position: absolute;
   left: 30%;
@@ -60,7 +60,7 @@
   color: #cd7676;
 }
 
-.arrowsContainer > .arrow:hover{
+.arrowsContainer > .arrow:hover {
   cursor: pointer;
 }
 
@@ -103,6 +103,13 @@
   height: 150px;
   background-color: #ffffff;
   border-radius: 50%;
+  overflow: hidden;
+}
+
+.imgCon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .dayDetailsBox {
@@ -144,6 +151,34 @@
 
   background: white;
   border-radius: 14px;
+}
+
+.timeContainer > .emptyCon {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeContainer > .emptyCon > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #cd7676;
+}
+
+.timeContainer > .emptyCon > button {
+  width: 80px;
+  height: 50px;
+
+  background: #d9d9d9;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .Container > .dayContainer {
